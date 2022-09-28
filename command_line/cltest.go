@@ -18,4 +18,11 @@ func main() {
 		}
 		iArgs = append(iArgs, val)
 	}
+	max := 0
+	for _, val := range iArgs {
+		if val > max {
+			max = val
+		}
+	}
+	fmt.Println("Max Value :", max)
 }
